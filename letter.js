@@ -1,6 +1,6 @@
 function Letter(letter) {
     this.letter = letter;
-    if (this.letter == ' ') {
+    if (this.letter == " ") {
         this.show = true;
     } else {
         this.show = false;
@@ -9,7 +9,7 @@ function Letter(letter) {
         if (this.show) {
             return this.letter;
         } else {
-            return ' _ ';
+            return "_ "; 
         }
     };
 }
