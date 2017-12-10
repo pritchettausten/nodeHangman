@@ -1,8 +1,8 @@
 var letter = require("./letter.js")
  
 var Word = function(wordChoice) {
-    this.trysLeft = 8;
     this.wordChoice = wordChoice;
+    this.trysLeft = 10;
     this.letters = [];
     this.guessed = [];
     for (var i = 0; i < this.wordChoice.length; i++) {
