@@ -2,7 +2,7 @@ var letter = require("./letter.js")
  
 var Word = function(wordChoice) {
     this.wordChoice = wordChoice;
-    this.trysLeft = 10;
+    this.triesLeft = 10;
     this.letters = [];
     this.guessed = [];
     for (var i = 0; i < this.wordChoice.length; i++) {
@@ -43,7 +43,7 @@ Word.prototype.checkLetter = function(letter) {
             }
         };
         if (this.notValid) {
-            this.trysLeft--;
+            this.triesLeft--;
         }
     }
 };

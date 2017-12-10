@@ -50,13 +50,13 @@ function userGuess() {
             console.log("\nWinner! Winner! You're going to " + newWord.wordChoice + "!\n");           
             startGame();
 
-        } else if (newWord.trysLeft === 0) {
+        } else if (newWord.triesLeft === 0) {
             console.log("\nThe country was " + newWord.wordChoice + " but you lost. Sorry, friend!\n");
             startGame();
 
         } else {
             console.log(" ");
-            console.log("Guesses Left: " + newWord.trysLeft);
+            console.log("Guesses Left: " + newWord.triesLeft);
             console.log("Letters Guessed: " + newWord.guessed.join(", ") + "\n");
             
             userGuess();
