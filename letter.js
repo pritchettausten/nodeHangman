@@ -5,6 +5,7 @@ function Letter(letter) {
     } else {
         this.show = false;
     }
+//IF THE LETTER IS TRUE IT WILL SHOW, ELSE IT WILL CONTINUE TO SHOW AN UNDERSCORE
     this.printLetter = function() {
         if (this.show) {
             return this.letter;
